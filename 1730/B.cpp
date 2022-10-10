@@ -7,21 +7,19 @@ using namespace std;
 void solve(){
     int n ;
     cin >> n;
-    int x[2 * n] = {0};
-    int t[2 * n] = {0};
+    int x[n] = {0};
     for ( int i = 0 ; i < n ; i ++){
         cin >> x[i];
     }
+    int t;
+    int maxx = -1e9;
+    int minn = 1e9;
     for (int i = 0 ; i < n ; i ++){
-        cin >> t[i];
+        cin >> t ;
+        maxx = max(maxx,x[i]+t);
+        minn = min(minn,x[i]-t);
     }
-    for (int i = 0 ; i < n ; i ++){
-        x[i+n] = x[i]+t[i];
-        x[i] -= t[i];
-    }
-    int min = *min_element(x,x+2*n);
-    int max = *max_element(x,x+2*n);
-    cout << ((double)min+max) / 2 << endl;
+    cout <<fixed<<setprecision(6)<< ((double)minn+maxx) / 2 << endl;
 }
 
 int main() {
