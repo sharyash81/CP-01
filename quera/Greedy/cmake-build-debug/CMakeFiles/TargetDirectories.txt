@@ -1,0 +1,3 @@
+/home/sharyash/Desktop/University/Term 5/CP/git/quera/W1/cmake-build-debug/CMakeFiles/W1.dir
+/home/sharyash/Desktop/University/Term 5/CP/git/quera/W1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/sharyash/Desktop/University/Term 5/CP/git/quera/W1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
